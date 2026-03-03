@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #000080;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans;
+  }
+}
+
+.pdf-placeholder {
+  background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.glass-morphism {
+  @apply bg-white/80 backdrop-blur-md border border-white/20;
+}
